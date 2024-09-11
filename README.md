@@ -1,7 +1,3 @@
-Certainly! Here is the revised README file with the hash symbols removed:
-
----
-
 # Feedback System Web Application
 
 This project is a simple feedback system built using FastAPI, a high-performance web framework for Python, and TinyDB, a lightweight document-oriented database. The application allows users to submit feedback through a web form and view all submitted feedbacks.
@@ -145,7 +141,3 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ## Conclusion
 
 This FastAPI/TinyDB application demonstrates a basic web app deployment using Docker. It showcases the use of FastAPI, TinyDB, and containerization techniques.
-
----
-
-Feel free to adjust the content as needed!
