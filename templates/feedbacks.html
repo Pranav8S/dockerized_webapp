@@ -1,0 +1,29 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Feedbacks</title>
+</head>
+<body>
+    <h1>All Feedbacks</h1>
+    <a href="/">Back to Feedback Form</a><br><br>
+
+    {% if feedbacks %}
+        <ul>
+            {% for feedback in feedbacks %}
+                <li>
+                    <strong>Name:</strong> {{ feedback.name }}<br>
+                    <strong>Date of Birth:</strong> {{ feedback.dob }}<br>
+                    <strong>Location:</strong> {{ feedback.location }}<br>
+                    <strong>Feedback:</strong> {{ feedback.feedback }}<br><br>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No feedbacks found.</p>
+    {% endif %}
+</body>
+</html>
+ 
